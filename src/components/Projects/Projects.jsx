@@ -26,7 +26,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Mis Proyectos" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
@@ -55,19 +55,19 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        Ver código fuente
                       </a>
 
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
+                      {/* {repo && (
+                        // <a
+                        //   target="_blank"
+                        //   rel="noopener noreferrer"
+                        //   className="cta-btn text-color-main"
+                        //   href={repo}
+                        // >
+                        //   Ver código fuente:
+                        // </a>
+                      )} */}
                     </div>
                   </Fade>
                 </Col>
@@ -81,7 +81,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={url || 'https://github.com/AngelDev996/AngelDev996.github.io'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
